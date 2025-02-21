@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Augmented Reality Website</title>
+    <link rel="stylesheet" href="../STYLE/style.css">
+</head>
+<body>
+    <img class="image" src="../IMAGE/one.jpg" alt="Background Image">
+    
+    <div class="title-container">
+        <h1 class="main-title">AUGMENTED REALITY</h1>
+    </div>
+
+    <div class="container">
+        <form class="form" id="loginForm">
+            <h1>LOGIN</h1>
+            <div class="input-box">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="loginPassword" placeholder="Password" required>
+            </div>
+            <p id="loginMessage" style="color: red;"></p>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form refresh
+
+            let loginEmail = document.getElementById("loginEmail").value;
+            let loginPassword = document.getElementById("loginPassword").value;
+            let loginMessage = document.getElementById("loginMessage");
+
+            let storedUser = JSON.parse(localStorage.getItem("user"));
+
+            if (!storedUser) {
+                loginMessage.innerText = "No account found! Please register.";
+                return;
+            }
+
+            if (loginEmail === storedUser.email && loginPassword === storedUser.password) {
+                alert("Login Successful!");
+                window.location.href = "./home.html"; // Redirect to home page
+            } else {
+                loginMessage.innerText = "Invalid email or password.";
+            }
+        });
+    </script>
+</body>
+</html>
