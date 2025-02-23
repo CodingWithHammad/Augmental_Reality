@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <img class="image" src="../IMAGE/one.jpg" alt="Background Image">
+    <img class="image" src="../Augmental_Reality/assets/img/one.jpg" alt="Background Image">
     
     <div class="title-container">
         <h1 class="main-title">AUGMENTED REALITY</h1>
@@ -29,7 +29,7 @@
             </div>
             <button type="submit" class="btn">Login</button>
             <div class="register-link">
-                <p>Don't have an account? <a href="register.html">Register</a></p>
+                <p>Don't have an account? <a href="../Augmental_Reality/assets/html/register.html">Register</a></p>
             </div>
         </form>
     </div>
@@ -51,7 +51,7 @@
 
             if (loginEmail === storedUser.email && loginPassword === storedUser.password) {
                 alert("Login Successful!");
-                window.location.href = "./home.html"; // Redirect to home page
+                window.location.href = "../Augmental_Reality/assets/html/home.html"; // Redirect to home page
             } else {
                 loginMessage.innerText = "Invalid email or password.";
             }

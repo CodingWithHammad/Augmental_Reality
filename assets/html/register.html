@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Augmented Reality</title>
-    <link rel="stylesheet" href="../STYLE/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.prod.website-files.com/62b46e994f1dca9e9be49474/css/immerse-staging.1a33b1c16.min.css"
+        rel="stylesheet" type="text/css" />
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css"
+    integrity="sha512-lvaVbvmbHhG8cmfivxLRhemYlTT60Ly9Cc35USrpi8/m+Lf/f/T8x9kEIQq47cRj1VQIFuxTxxCcvqiQeQSHjQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</div>
 </head>
-<body>
-    <img class="image" src="../IMAGE/one.jpg" alt="Background Image">
 
-    <div class="container">
+<body>
+    <!-- <img class="image" src="../img/one.jpg" alt="Background Image"> -->
+
+
+    <div class="nav-bg-trigger">
+        <div class="nav-bg-trigger-anchor"></div>
+    </div>
+    <div data-animation="default" class="navbar w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav"
+        data-easing="ease" data-collapse="medium" data-w-id="ff29b408-d402-bacc-e382-d27f871188ed" role="banner"
+        data-duration="400">
+        <div class="nav-spacer-wrap">
+            <div class="nav-spacer condensed"></div>
+        </div>
+        <div class="nav-background nav-background-2024 home">
+            <div class="container jose-navigation-container">
+                <div class="nav-background-line"></div>
+                <div class="nav-background-inner"></div>
+                <div class="nav-background-line right"></div>
+            </div>
+            <div class="nav-background-hr top-hr"></div>
+            <div class="nav-background-hr bottom-hr"></div>
+        </div>
+        <div class="navbar_container mobile-fit">
+
+            <div><img style=" width: 160px;height: 150px;filter: drop-shadow(0 0 7px rgba(30,19,50,1)px);"
+                    src="../img/logo.png" alt="logo"></div>
+            <nav role="navigation" class="navbar_menu w-nav-menu">
+                <div class="nav_link-list">
+                    <div class="hide">
+                    </div><a href="./home.html" class="navbar_link w-nav-link">Home</a><a href="./about.html" class="navbar_link w-nav-link">About</a><a
+                        href="./aibot.html" class="navbar_link w-nav-link">AI Bot</a><a
+                        href="./branches.html" class="button is-gold w-inline-block">
+                        <div class="button-inner">
+                            <div>Branchs</div>
+                        </div>
+                    </a><a href="../html/register.html" target="_blank" class="navbar_link w-nav-link">Log
+                        in</a>
+                </div>
+            </nav>
+            <div class="navbar_menu-button w-nav-button">
+                <div class="menu-icon">
+                    <div class="menu-icon_line-top"></div>
+                    <div class="menu-icon_line-middle"></div>
+                    <div class="menu-icon_line-bottom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+
+
+    <div class="container" style="width: fit-content;">
         <form class="form" id="registerForm">
             <h1>Register</h1>
             <div class="input-box">
@@ -27,13 +85,13 @@
             <p id="errorMessage" style="color: red;"></p>
             <button type="submit" class="btn">Create Account</button>
             <div class="register-link">
-                <p>Already have an account? <a href="../HTML/index.html">Login</a></p>
+                <p>Already have an account? <a href="index.html">Login</a></p>
             </div>
         </form>
     </div>
 
     <script>
-        document.getElementById("registerForm").addEventListener("submit", function(event) {
+        document.getElementById("registerForm").addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent form refresh
 
             let fullname = document.getElementById("fullname").value;
