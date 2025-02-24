@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <img class="image" src="../Augmental_Reality/assets/img/one.jpg" alt="Background Image">
+    <link href="https://cdn.prod.website-files.com/62b46e994f1dca9e9be49474/css/immerse-staging.1a33b1c16.min.css"
+    rel="stylesheet" type="text/css" />
+    <!-- <img class="image" src="../Augmental_Reality/assets/img/one.jpg" alt="Background Image"> -->
     
-    <div class="title-container">
-        <h1 class="main-title">AUGMENTED REALITY</h1>
+    <div class="title-container" style="">
+        <h1 class="main-title" style="font-size: 76px; margin-left: 100px; " >AUGMENTAL REALITY</h1>
     </div>
 
-    <div class="container">
-        <form class="form" id="loginForm">
-            <h1>LOGIN</h1>
+    <div class="container"style="width: fit-content; " >
+        <form class="form" id="loginForm" style="width: fit-content; padding: 20px;">
+            <h2>LOGIN</h2>
             <div class="input-box">
                 <input type="email" id="loginEmail" placeholder="Email" required>
             </div>
@@ -23,7 +25,7 @@
                 <input type="password" id="loginPassword" placeholder="Password" required>
             </div>
             <p id="loginMessage" style="color: red;"></p>
-            <div class="remember-forgot">
+            <div class="remember-forgot" style="display: flex;column-gap: 10px;">
                 <label><input type="checkbox"> Remember me</label>
                 <a href="#">Forgot Password?</a>
             </div>
