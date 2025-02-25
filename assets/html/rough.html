@@ -4,52 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Overlay Text</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css"
+        integrity="sha512-lvaVbvmbHhG8cmfivxLRhemYlTT60Ly9Cc35USrpi8/m+Lf/f/T8x9kEIQq47cRj1VQIFuxTxxCcvqiQeQSHjQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-cover {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <marquee direction="left"  style="display: flex;flex-direction :row;column-gap:  40px;">
-     <div class="marquee-wrap" style=" display: flex;flex-direction :row;column-gap:  50px;"> 
-            <div><img src="../img/seven.avif" alt="" height="150px" width="170px" sizes="112px" /></div>
-        
-    
-            <div><img src="../img/eight.jpg" alt="" height="150px" width="170px" sizes="112px"></div>
-        
-    
-            <div><img src="../img/nine.avif" alt="" height="150px" width="170px" sizes="112px" /></div>
-        
-    
-            <div><img src="../img/ten.jpg" loading="lazy" alt="" sizes="112px" height="150px" width="170px" /></div>
-        
-    
-            <div><img src="../img/eleven.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px" /></div>
-        
-    
-            <div><img src="../img/twelve.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px"></div>
-        
-    
-            <div><img src="../img/thirteen.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px"></div>
-        
-    
-            <div><img src="../img/avif/five.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px">
-            </div>
-        
-    
-            <div><img src="../img/avif/four.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px">
-            </div>
-        
-    
-            <div><img src="../img/avif/six.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px"></div>
-            
-            <div><img src="../img/avif/three.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px"></div>
-            
-            <div><img src="../img/avif/virtual-reality-web-template-duotone_23-2148942005.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px"></div>
-            <br>
-            <div><img src="../img/avif/ai-nuclear-energy-background-future-innovation-disruptive-technology_937196-68.avif" loading="lazy" alt="" height="150px" width="170px" sizes="112px"></div>
-        </div> 
-    </marquee>
-
+    <div class="image-container">
+        <img src="https://cdn.prod.website-files.com/62b46e994f1dca4537e494a5/66f197596c5ab58491c5c06b_%E2%80%9CEvery%20I%20Learn%20in%20IMMERSE%2C%20%20I%27m%20Able%20To%20Use%20in%20Real%20Life%E2%80%9D.png"
+            loading="lazy" alt="Original Image" class="image-cover" />
+        <div class="overlay-text">Augmental</div>
+    </div>
 
 </body>
 
