@@ -1,43 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Augmented Reality Website</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
 </head>
+
 <body>
     <link href="https://cdn.prod.website-files.com/62b46e994f1dca9e9be49474/css/immerse-staging.1a33b1c16.min.css"
-    rel="stylesheet" type="text/css" />
+        rel="stylesheet" type="text/css" />
     <!-- <img class="image" src="../Augmental_Reality/assets/img/one.jpg" alt="Background Image"> -->
-    
-    <div class="title-container" style="">
-        <h1 class="main-title" style="font-size: 76px; margin-left: 100px; " >AUGMENTAL REALITY</h1>
+
+    <div class="navbar_container mobile-fit">
+
+        <div><img style=" width: 160px;height: 150px;filter: drop-shadow(0 0 7px rgba(30,19,50,1)px);"
+                src="../Augmental_Reality/assets/img/logo.png" alt="logo"></div>
+        <nav role="navigation" class="navbar_menu w-nav-menu">
+            <div class="nav_link-list">
+                <div class="hide">
+                </div><a href="" class="navbar_link w-nav-link">Home</a><a href=""
+                    class="navbar_link w-nav-link">About</a><a href="" class="navbar_link w-nav-link">AI
+                    Bot</a><a href="" class="button is-gold w-inline-block">
+                    <div class="button-inner">
+                        <div>Branches</div>
+                    </div>
+                </a><a href="../html/register.html" target="_blank" class="navbar_link w-nav-link">Log
+                    in</a>
+            </div>
+        </nav>
+    </div>
+    <div class="" style="width: 99vw;height: 80vh; display: flex;flex-direction: row;justify-content: center;align-items: center;">
+
+
+        <div class="title-container" style="">
+            <h1 class="main-title" style="font-size: 76px; margin-left: 100px;font-weight: 900;text-decoration: underline;">AUGMENTAL REALITY</h1>
+        </div>
+
+        <div class="container" style="width: fit-content; ">
+            <form class="form" id="loginForm" style="width: fit-content; padding: 15px;">
+                <h2 style="font-weight: 500;">LOGIN</h2>
+                <div class="input-box">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <p id="loginMessage" style="color: red;"></p>
+                <div class="remember-forgot" style="display: flex;column-gap: 10px;">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="../Augmental_Reality/assets/html/register.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+
     </div>
 
-    <div class="container"style="width: fit-content; " >
-        <form class="form" id="loginForm" style="width: fit-content; padding: 20px;">
-            <h2 style="font-weight: 800;">LOGIN</h2>
-            <div class="input-box">
-                <input type="email" id="loginEmail" placeholder="Email" required>
-            </div>
-            <div class="input-box">
-                <input type="password" id="loginPassword" placeholder="Password" required>
-            </div>
-            <p id="loginMessage" style="color: red;"></p>
-            <div class="remember-forgot" style="display: flex;column-gap: 10px;">
-                <label><input type="checkbox"> Remember me</label>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <div class="register-link">
-                <p>Don't have an account? <a href="../Augmental_Reality/assets/html/register.html">Register</a></p>
-            </div>
-        </form>
-    </div>
+    <style>
+        
+/* Centering Container */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    width: 350px;
+    text-align: center;
+    height: 450px;
+}
 
+/* Title Styling */
+h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: orange;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkorange;
+}
+
+/* Remember & Forgot Password */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Register Link */
+.register-link {
+    font-size: 14px;
+    margin-top: 15px;
+    color: white;
+}
+
+.register-link a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire screen without distortion */
+    z-index: -1;
+}
+
+    </style>
     <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent form refresh
 
             let loginEmail = document.getElementById("loginEmail").value;
@@ -60,4 +181,5 @@
         });
     </script>
 </body>
+
 </html>
