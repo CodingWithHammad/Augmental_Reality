@@ -15,7 +15,7 @@
 
     <div class="navbar_container mobile-fit">
 
-        <div><img style=" width: 160px;height: 150px;filter: drop-shadow(0 0 7px rgba(30,19,50,1)px);"
+        <div><img style=" width: 160px;height: 150px;filter: drop-shadow(0 0 5px orange);"
                 src="./assets/img/logo.png" alt="logo"></div>
         <nav role="navigation" class="navbar_menu w-nav-menu">
             <div class="nav_link-list">
@@ -31,13 +31,18 @@
             </div>
         </nav>
     </div>
-    <div class=""
+    <div class="wrapper"
         style="width: 99vw;height: 80vh; display: flex;flex-direction: row;justify-content: center;align-items: center;">
 
 
-        <div class="title-container">
-            <h1 class="main-title"
-                style="font-size: 76px; margin-left: 100px;font-weight: 900;text-decoration: underline;"
+        <div class="wrapper">
+            <h1 class="text" style="font-size: 5rem;color: #faf8f8;background: url(../Augmental_Reality/assets/img/twelve.avif) center;background-size: cover;background-clip: text;color: transparent;animation: animate 2s infinite alternate;margin-left: 30px;
+            @keyframes animate {
+    to{
+        background-position: -200px;
+    }
+};"
+               
                 >AUGMENTAL
                 REALITY</h1>
         </div>
@@ -79,11 +84,11 @@
         }
 
         /* Title Styling */
-        h1 {
+        /* h1 {
             color: #fff;
             font-size: 24px;
             margin-bottom: 20px;
-        }
+        } */
 
         /* Input Fields */
         .input-box {

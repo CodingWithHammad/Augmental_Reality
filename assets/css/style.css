@@ -42,11 +42,11 @@ body::before {
 }
 
 /* Title Styling */
-h1 {
+/* h1 {
     color: #fff;
     font-size: 24px;
     margin-bottom: 20px;
-}
+} */
 
 /* Input Fields */
 .input-box {
@@ -124,6 +124,39 @@ h1 {
 
 
 
+/* .wrapper{
+    display: inline-block;
+}
 
+.text{
+    font-size: 5rem;
+    width: 100%;
+    white-space: nowrap;
+    color: #9d1111;
+    overflow: hidden;
+    border-right:5px solid;
+    animation: typing 2.5s steps(22),
+    cursor .4s step-end infinite alternate;
+    
+}  */
+/* @keyframes typing {
+    from{
+        width: 0;
+    }
+}
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}  */
+   /* style="font-size: 76px; margin-left: 100px;font-weight: 900;text-decoration: underline;"
+                 */
 
-   
+@keyframes animate {
+    from{
+        background-position: -100px ;
+    }
+    to{
+        background-position: -200px;
+    }
+}
