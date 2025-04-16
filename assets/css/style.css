@@ -160,3 +160,7 @@ body::before {
         background-position: -200px;
     }
 }
+
+.test {
+    animation: animate 2s infinite alternate !important;
+}
