@@ -5,7 +5,7 @@ document.getElementById("submit").addEventListener("click", (e) => {
     let password = document.querySelector(".password").value.trim();
     let message = document.getElementById("passwordMessage");
 
-    let validUsers = ["hammad", "Hammad", "HAMMAD"];
+    let validUsers = ["hammad", "Hammad", "HAMMAD","Jaspreet","krishna"];
     let validPassword = "12345";
 
     if (!user || !password) {
